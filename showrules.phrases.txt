@@ -5,58 +5,68 @@
 		"en"			"Rules have been displayed to:"
 		"pl"			"Zasady zostały wyświetlone dla:"
 		"de"			"Die Regeln wurden angezeigt für:"
+		"ru"			"Правила показаны:"
 	}
 	"Player agrees to rules"
 	{
 		"en"			"Thank you.  Have fun and welcome to our community!"
 		"pl"			"Witaj w naszej społeczności, miłej zabawy!"
 		"de"			"Danke sehr. Hab Spaß und willkommen in unserer Gemeinschaft!"
+		"ru"			"Спасибо. Удачи и добро пожаловать в наше сообщество!"
 	}
 	"Player disagrees to rules"
 	{
 		"en"			"Sorry, you must agree to our rules and conditions"
 		"pl"			"Przepraszamy, musisz zaakceptować nasze warunki oraz zasady."
 		"de"			"Entschuldigung, du musst unseren Regeln und Bedingungen zustimmen."
+		"ru"			"Извините, вы должны согласиться с нашими правилами и условиями"
 	}
 	"Player disagreed public"
 	{
 		"en"			"did not like our rules and conditions."
 		"pl"			"nie spodobały się nasze zasady i warunki."
 		"de"			"mochte unsere Regeln und Bedingungen nicht."
+		"ru"			"не понравились наши правила и условия."
 	}
 	"Rules menu title"
 	{
 		"en"			"Server Rules & Conditions"
 		"pl"			"Zasady & Warunki Serwera"
 		"de"			"Server Regeln und Bedingungen"
+		"ru"			"Правила и условия сервера"
 	}
 	"Agree Question"
 	{
 		"en"			"Do you agree to abide by our rules and conditions?"
 		"pl"			"Czy akceptujesz nasze zasady i warunki?"
 		"de"			"Stimmst du zu unsere Regeln und Bedingungen zu befolgen?"
+		"ru"			"Согласны ли вы соблюдать наши правила и условия?"
 	}
 	"Yes Option"
 	{
 		"en"			"Yes, I agree"
 		"pl"			"Tak, akceptuję."
 		"de"			"Ja, ich stimme zu."
+		"ru"			"Да, я согласен"
 	}
 	"No Option"
 	{
 		"en"			"No, I do not agree"
 		"pl"			"Nie, nie akceptuję."
 		"de"			"Nein, ich stimme nicht zu."
+		"ru"			"Нет, я не согласен"
 	}
 	"Close Option"
 	{
 		"en" 			"Close Window"
 		"pl"			"Zamknij okno"
 		"de"      "Fenster schlieben"
+		"ru" 			"Закрыть окно"
 	}
 	"Log kick message"
 	{
 		"en"			"Player disagreed to rules (kicked):"
 		"pl"			"Gracz odrzucił zasady (wykopany):"
+		"ru"			"Игрок не согласился с правилами (выгнан):"
 	}
 }
