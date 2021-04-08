@@ -38,10 +38,10 @@ new Handle:g_cookie = INVALID_HANDLE;
 public Plugin:myinfo =
 {
 	name = "Menu Based Rules",
-	author = "XARiUS",
+	author = "XARiUS, whallin & ks",
 	description = "Display menu of rules to clients when they join a server, or by console command.",
-	version = "1.5.1",
-	url = "http://www.the-otc.com/"
+	version = "1.5.2",
+	url = "https://github.com/whallin/menu-rules"
 };
 
 public OnPluginStart()
@@ -51,7 +51,6 @@ public OnPluginStart()
   LoadTranslations("showrulesdata.phrases");
   g_cookie = RegClientCookie("showrules", "Rules Agreement Timestamp", CookieAccess_Protected);
   GetLanguageInfo(GetServerLanguage(), languagecode, sizeof(languagecode), language, sizeof(language));
-  CreateConVar("sm_showrules_version", VERSION, "Menu Rules Version", FCVAR_PLUGIN|FCVAR_SPONLY|FCVAR_REPLICATED|FCVAR_NOTIFY|FCVAR_DONTRECORD);
   g_Cvarenabled = CreateConVar("sm_showrules_enabled", "1", "Enable this plugin.  0 = Disabled.");
   g_Cvarjoinsound = CreateConVar("sm_showrules_joinsound", "", "Sound file to play to connecting clients.  Relative to the sound/ folder.  Example: 'welcome.mp3' or 'mysounds/welcome.mp3'");
   g_Cvarmenutime = CreateConVar("sm_showrules_menutime", "120", "Time to display rules menu to client before dissolving (and kicking them).");
@@ -246,7 +245,7 @@ public Action:UserMsg_VGUIMenu(UserMsg:msg_id, Handle:bf, const players[], playe
     playeridcount = 0;
 
     for (new i = 1; i <= maxplayers; i++) {
-            if (IsClientInGame(i) && !IsFakeClient(i) && GetClientAuthString(i, playerid[playeridcount], sizeof(playerid[]))) {
+            if (IsClientInGame(i) && !IsFakeClient(i) && GetClientAuthId(i, playerid[playeridcount], sizeof(playerid[]))) {
             playeridcount++;
         }
       }
@@ -301,7 +300,7 @@ public OnClientPostAdminCheck(client)
       g_AdminChecked[client] = true;
       // Search through playerid array to see if user was here for map change.
       prevclient = false;
-      GetClientAuthString(client, steamid, 64);
+      GetClientAuthId(client, steamid, 64);
       playeridcount = 0;
       new maxplayers = GetMaxClients();
       for (new i = 1; i <= maxplayers; i++) 
