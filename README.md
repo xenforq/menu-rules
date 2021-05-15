@@ -18,6 +18,18 @@ Menu Rules were created by [@XARIUS](https://forums.alliedmods.net/showthread.ph
 
 <!-- CVARS -->
 ## Cvars
+All commands can be used with ! or / in the chat.
+- ``sm_showrules_version``			: Shows the current version of the plugin.
+- ``sm_showrules_enabled``			: 1 = Enables the plugin. 0 = Disables the plugin. (Default: 1)
+- ``sm_showrules_joinsound``		: Sound file to play to connecting clients.  Relative to the sound/ folder.  Example: 'welcome.mp3' or 'mysounds/welcome.mp3'
+- ``sm_showrules_menutime`` 		: Time to display rules menu to client before dissolving (and kicking them). (Default: 120 seconds)
+- ``sm_showrules_showonjoin``		: Display Rules menu to clients automatically upon joining the server. 1 = Enabled. 0 = Disabled. (Default: 1)
+- ``sm_showrules_showtoadmins``		: On join, display menu to admins. 1 = Enabled. 0 = Disabled. (Default: 0)
+- ``sm_showrules_displayattempts``	: Number of times to attempt to display the rules menu. (3 second intervals) (Default: 20 times)
+- ``sm_showrules_failurekick``		: Kick the client if the rules cannot be displayed after defined display attempts. 1 = Enabled. 0 = Disabled. (Default: 1)
+- ``sm_showrules_showmenuoptions``	: Shows agree/disagree options instead of a single option to close the rules menu. 1 = Enabled. 0 = Disabled. (Default: 1)
+- ``sm_showrules_expiration``		: Number of hours before the previous terms agreement expires. (Default: 24 hours)
+- ``sm_showrules_showrules``		: Show the rule to a certain player. ``sm_showrules <#userid|name>``
 
 <!-- LICENSE -->
 ## License
