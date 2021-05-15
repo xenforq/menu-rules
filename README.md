@@ -10,7 +10,7 @@
 </p>
 
 <!-- ABOUT -->
-## 🎮 menu-rules
+# 🎮 menu-rules
 menu-rules was originally created and developed by [@XARIUS](https://forums.alliedmods.net/showthread.php?p=639481), but has now turned into a more inactive resource that sadly isn't being maintained. Hence, why this repository exists. We're here to make sure development of this incredibly useful plugin remains active and fixes are made to existing issues. 
 
 menu-rules lets you display a menu filled with your rules to your users, to make sure they are aware of your server's terms. Kick them from your server if they fail to agree to your rules either by manually declining or not answering in time. 
